@@ -9,7 +9,12 @@ import { ConfigModule } from './config/config.module';
 
 @Module({
   imports: [AuthModule, ConfigModule],
-  controllers: [AppController, OrgsController, ReposController, BranchesController],
+  controllers: [
+    AppController,
+    OrgsController,
+    ReposController,
+    BranchesController,
+  ],
   providers: [AppService],
 })
 export class AppModule {}
